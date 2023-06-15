@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* CSS variables */
+:root {
+	--bold-color: rgb(51, 102, 204);
+	--primary-color: rgb(111, 9, 243);
+	--secondary-color: rgb(21, 26, 56);
+	--paragraph-color: rgb(70, 70, 70);
+	--body-color: rgb(255, 255, 255);
+	--font-size-one: 18px;
+	--font-size-two: 48px;
+	--font-size-three: 22px;
+}
+
+/* Styles for the heading */
+.welcome {
+	color: var(--primary-color);
+	font-size: var(--font-size-two);
+	text-align: center;
+}
+
+/* Background color and dimensions for the container div */
+.container {
+	width: 1200px;
+	height: 1060px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Background color and border for the table */
+table {
+	background-color: #fff;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Border around table cells */
+td {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* Styles for the first list item */
+ul li:first-child {
+	font-weight: bold;
+}
+
+/* Styles for the image */
+.gif {
+	width: 300px;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+}
+
+/* Styles for specific table cells */
+table tbody tr:first-child td {
+	background-color: #f2f2f2;
+}
+
+table tbody tr:last-child td {
+	background-color: #f9f9f9;
+}
+
+table thead th {
+	background-color: #ddd;
+}
+
+/* Usage of CSS variables */
+
+ul li {
+	color: var(--paragraph-color);
+}
+ul li:first-child {
+	color: var(--bold-color);
+}
+
+.fb-link {
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--bold-color);
+}
+/* Pseudo-classes and box model */
+.fb-link:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+.fb-link:active {
+	color: #990000;
+}
+
+.container::before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.container {
+	background: linear-gradient(130.44deg, #fbfafc 14.06%, #7a1df2 271.01%);
+	margin-top: 80px;
+	padding: 80px;
+}
+.container::after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.list-img-parent {
+	margin-top: 56px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.unordered-list {
+	font-size: var(--font-size-one);
+	width: 60%;
+	margin-left: 140px;
+	margin-top: 60px;
+}
+.description {
+	padding: 0 40px 0 40px;
+	font-size: var(--font-size-three);
+	text-align: center;
+	margin-top: 24px;
+}
+.table-div {
+	margin-top: 48px;
+	padding: 40px 30px;
+}

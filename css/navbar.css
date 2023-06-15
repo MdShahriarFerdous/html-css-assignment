@@ -1,0 +1,410 @@
+
+.navbar-div {
+    background-color: #FFFFFC;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    padding: 0 80px;
+    z-index: 110px;
+    box-shadow: 0px 35px 70px rgba(111, 9, 243, 0.08);
+    transition: all .02s;
+}
+.dark-mode-body #header .navbar-div {
+    background-color: #0A1128; 
+    box-shadow: 0px 35px 70px rgba(152, 78, 249,0.03);
+}
+
+.left-section, 
+.middle-section, 
+.right-section {
+    font-family: 'Poppins', sans-serif;
+}
+.left-section {
+    display: flex;
+    width: 286px;
+    align-items: center;
+}
+
+
+.brand-Logo {
+    width: 48px;
+    margin-top: 8px;
+}
+.brand-name-div {
+    margin-left: 8px;
+}
+.brand-name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 0;
+
+}
+.brand-name-span {
+    color: rgb(109, 9, 241);
+}
+.dark-mode-body  .left-section .brand-name-span {
+    color: rgb(152, 78, 249);
+}
+
+
+.middle-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-hambar-div,
+.toggle-hambar-div .resume-button-toggle {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-name .content-name-link {
+    font-size: 1rem;
+    margin-right:56px ;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 0.056px;
+    transition: color 0.15s, text-decoration 0.15s;
+    
+}
+
+
+
+
+.dark-mode-body  .middle-section .content-name .content-name-link {
+    color: rgb(255, 255, 255);
+} 
+
+.hambar-div  .content-name-toggle .content-name-link:hover, 
+.content-name .content-name-link:hover {
+    text-decoration: underline rgb(111, 9, 243) 2.5px;
+    color:  rgb(111, 9, 243);
+    cursor: pointer;
+}
+
+
+.hambar-div .content-name-toggle .content-name-link.active-menu ,
+.content-name .content-name-link.active-menu {
+    text-decoration: underline rgb(111, 9, 243) 2.5px;
+    color:  rgb(111, 9, 243);
+}
+
+
+.dark-mode-body  .middle-section .content-name .content-name-link:hover {
+    color: rgb(152, 78, 249);
+}
+
+
+
+
+.right-section {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mode-img {
+    cursor: pointer;
+    transition: all 0.15s;
+    
+}
+.mode-img:hover {
+    transform: rotate(45deg);
+}
+
+.resume-button {
+    position: absolute;
+    right: 0;
+    padding: 16px 32px;
+    background: #FFFFFC;
+    border-radius: 10px;
+    border: 2px solid rgb(111, 9, 243);
+    color: rgb(111, 9, 243);
+    font-size: 1rem;
+    margin-left: 48px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.dark-mode-body .right-section .resume-button {
+    background: rgb(21, 26, 56);
+    color: white;
+}
+
+.dark-mode-body .right-section .resume-button:hover,
+.resume-button:hover,
+.toggle-hambar-div .resume-button-toggle:hover {
+    background-color: rgb(111, 9, 243);
+    color: rgb(255, 255, 255);
+}
+
+.resume-button:active,
+.toggle-hambar-div .resume-button-toggle:active{
+    background-color: rgb(111, 0, 255);
+    box-shadow: 0 10px 20px rgba(111, 9, 243, 0.15);
+}
+
+
+
+.ham-button-div {
+    display: none;
+}
+.hamburger-img {
+    width: 32px;
+}
+.hambar-div {
+    display: none;
+    transition: all 3s;
+}
+
+/* when user will click the button */
+.toggle-hambar-div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 500px;
+    background-color: #FFFFFC;
+    box-shadow: 15px 5px 30px rgba(0, 0, 0, 0.5);
+    /* justify-content: center; */
+    padding-top: 170px;
+    align-items: center;
+    z-index: 200;
+    transition: all 3s;
+    
+}
+.dark-mode-body .toggle-hambar-div {
+    background: #0A1128;
+}
+.toggle-hambar-div .cross-button {
+    background-color: #FFFFFC;
+    border: none;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.toggle-hambar-div .cross-button .cross-img {
+    width: 24px;
+}
+.toggle-hambar-div .content-name-toggle .content-name-link {
+    color: rgb(21, 26, 56);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.dark-mode-body .toggle-hambar-div .content-name-toggle .content-name-link {
+    color: white;
+    transition: color 0.15s;
+}
+.dark-mode-body .toggle-hambar-div .content-name-toggle .content-name-link:hover {
+    color: rgb(111, 0, 255);
+}
+.toggle-hambar-div .content-name-toggle{
+    margin-bottom: 56px;
+}
+.toggle-hambar-div .resume-button-toggle {
+    padding: 16px 32px;
+    background: #FFFFFC;
+    border-radius: 10px;
+    border: 2px solid rgb(111, 9, 243);
+    color: rgb(111, 9, 243);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.dark-mode-body .toggle-hambar-div .resume-button-toggle {
+    background-color: #0A1128;
+    color: white;
+    transition: background-color 0.15s, color 0.15s;
+}
+.dark-mode-body .toggle-hambar-div .resume-button-toggle:hover {
+    background-color: rgb(111, 9, 243);
+    color: white;
+}
+
+/* @media screen and (max-width: 1920px){
+   
+} */
+
+/* when it will hit 941px it will do this */
+@media screen and (max-width: 1024px){
+    .navbar-div {
+        padding: 0 56px;
+
+    }
+    .brand-Logo {
+        width: 40px;
+    }
+    .brand-name {
+        font-size: 18px;
+    }
+    .content-name .content-name-link {
+        font-size: 14px;
+    }
+    .resume-button {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 980px){
+    .hambar-div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 979px){
+    .navbar-div {
+        padding: 0 80px;
+        height: 72px;
+    }
+    .middle-section, .resume-button {
+        display: none;
+    }
+    .mode-button {
+        display: inline-block;
+    }
+    .left-section {
+        flex:1;
+        position: relative;
+    }
+    .ham-button-div {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+    .hamburger-button-toggle {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all 0.15s;
+    }
+    .toggle-hambar-div {
+        width: 350px;
+    }
+ 
+    .brand-Logo {
+        width: 40px;
+        margin-top: 8px;
+    }
+    .brand-name {
+        font-size: 20px;
+        margin-right: 0;
+    }
+}
+
+@media screen and  (min-width: 425px) and (max-width: 500px){
+    .brand-name {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .toggle-hambar-div {
+        width: 250px;
+    }
+    .ham-button-div {
+        padding-top: 3px;
+    }
+  
+    .mode-img {
+        width: 24px;
+    }
+    .right-section{
+        padding-left: 48px;
+    }
+    .hamburger-img {
+        width: 24px;
+    }
+    .navbar-div {
+        padding: 0 24px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .navbar-div {
+        padding: 0 24px;
+        height: 56px;
+    }
+    .mode-img {
+        width: 24px;
+        margin-left: 48px;
+    }
+    .brand-Logo {
+        margin-top: 6px;
+    }
+    .brand-name {
+        font-size: 0.875rem;
+    }
+    .ham-button-div {
+        margin-left: 8px;
+    }
+    .hamburger-img {
+        width: 24px;
+    }
+}
+@media screen and (max-width: 321px){
+    .navbar-div {
+        padding: 0 24px;
+        height: 48px;
+    }
+    .mode-img {
+        width: 18px;
+        margin-left: 32px;
+    }
+    .ham-button-div {
+        margin-left: 8px;
+    }
+    .hamburger-img {
+        width: 18px;
+    }
+}
+@media screen and (min-width: 1920px){
+    .navbar-div {
+        padding: 0 120px;
+        height: 96px;
+
+    }
+    .left-section {
+
+        width: 379px;
+
+    }
+    .brand-Logo {
+        width: 80px;
+
+    }
+    .brand-name {
+        font-size: 30px;
+        margin-left: 8px;
+
+    }
+    .content-name .content-name-link {
+        font-size: 20px;
+        margin-right:80px ;
+    }
+    .mode-img {
+        height: 32px;
+        
+    }
+    .resume-button {
+        padding: 18px 36px;
+        font-size: 20px;
+    }
+    .right-section {
+        width: 350px;
+    }
+
+
+    
+}

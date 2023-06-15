@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: relative;
+}
+.light-mode-body {
+    background-color: #FFFFFC;
+    color: rgb(21, 26, 56);
+}
+.dark-mode-body {
+    background-color: #0A1128; 
+    color: rgb(255, 255, 255);
+}
+::selection {
+    color: white;
+    background-color: rgb(111, 9, 243);
+}
+
+
+/*
+rgb(29, 26, 49); 
+font-family: 'Bitter', serif;
+font-family: 'Poppins', sans-serif;
+ */
